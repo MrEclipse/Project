@@ -15,7 +15,7 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="290dp"
+            android:layout_height="300dp"
             android:layout_marginTop="50dp"
             app:srcCompat="@drawable/unnamed" />
 
@@ -24,7 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="75dp"
+            android:layout_marginTop="80dp"
             android:text="Новая игра"
             android:onClick="NewGame"/>
 
@@ -34,7 +34,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
-            android:text="Загрузить сохранение" />
+            android:text="Загрузить сохранение"
+            android:onClick="Load"/>
 
         <Button
             android:id="@+id/button3"

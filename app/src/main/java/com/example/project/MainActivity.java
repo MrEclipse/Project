@@ -15,16 +15,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Window w = getWindow();
+        w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
+    }
+
+    @Override
+    public void startActivity(Intent intent) {
+        super.startActivity(intent);
     }
 
     public void NewGame(View view) {
     Intent intent=new Intent(MainActivity.this, NewgameActivity.class);
     startActivity(intent);
     }
-    @Override
-    public void startActivity(Intent intent) {
-        super.startActivity(intent);
-    }
 
+    public void Load(View view) {
+    Intent intent=new Intent(MainActivity.this, LoadActivity.class);
+    }
 }

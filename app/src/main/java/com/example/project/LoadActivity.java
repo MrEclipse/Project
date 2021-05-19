@@ -8,18 +8,18 @@ import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class NewgameActivity extends AppCompatActivity {
+public class LoadActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.new_game_main);
+        setContentView(R.layout.load_main);
         Window w = getWindow();
         w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
     }
     public void Back(View view) {
-        Intent intent=new Intent(NewgameActivity.this, MainActivity.class);
+        Intent intent=new Intent(LoadActivity.this, MainActivity.class);
         startActivity(intent);
     }
     @Override
