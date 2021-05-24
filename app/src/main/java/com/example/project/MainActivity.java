@@ -9,7 +9,7 @@ import android.view.Window;
 import android.view.WindowManager;
 
 public class MainActivity extends AppCompatActivity {
-
+    public static boolean isLogin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,8 +25,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void NewGame(View view) {
-    Intent intent=new Intent(MainActivity.this, NewgameActivity.class);
-    startActivity(intent);
+        if (MainActivity.isLogin==true){
+            Intent intent=new Intent(MainActivity.this, NewgameActivity.class);
+            startActivity(intent);
+        }
+        else {
+
+        }
     }
 
     public void Load(View view) {
