@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -12,8 +13,15 @@ public class MainActivity extends AppCompatActivity {
     public static boolean isLogin;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        isLogin = false;
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        try{
+            setContentView(R.layout.activity_main);
+        }catch (Exception e){
+            Log.d(e.getMessage(),"ok");
+        }
+
+
         Window w = getWindow();
         w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
@@ -37,4 +45,6 @@ public class MainActivity extends AppCompatActivity {
     public void Load(View view) {
     Intent intent=new Intent(MainActivity.this, LoadActivity.class);
     }
+
+
 }

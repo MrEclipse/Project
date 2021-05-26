@@ -6,17 +6,10 @@
     android:layout_height="match_parent"
     tools:context=".NewgameActivity">
 
-    <RelativeLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
-        >
-        <EditText
-            android:id="@+id/editTextTextPassword"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPassword" />
+        android:orientation="horizontal">
 
         <EditText
             android:id="@+id/editTextTextPersonName"
@@ -24,20 +17,33 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Name" />
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:layout_marginTop="48dp"
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="Вход"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center" />
 
         <Button
             android:id="@+id/button5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button" />
-    </RelativeLayout>
+            android:text="Button"
+            android:layout_marginTop="200dp"
+            android:layout_gravity="center"/>
+    </FrameLayout>
 
 
 
