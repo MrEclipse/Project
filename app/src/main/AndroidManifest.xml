@@ -29,7 +29,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegistrationActivity">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LeveloneActivity">
             <intent-filter>
 
                 <category android:name="android.intent.category.LAUNCHER" />

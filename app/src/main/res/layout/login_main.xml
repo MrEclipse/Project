@@ -4,45 +4,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NewgameActivity">
+    tools:context=".LoginActivity"
+    android:background="@color/white">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
         <EditText
             android:id="@+id/editTextTextPersonName"
-            android:layout_width="wrap_content"
+            android:layout_width="260dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:layout_marginTop="-50dp"
+            android:hint="Введите логин..."
+            android:background="@drawable/rounded_edittext"
+            />
 
         <EditText
             android:id="@+id/editTextTextPassword"
-            android:layout_width="wrap_content"
+            android:layout_width="260dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPassword"
-            android:layout_marginTop="48dp"
-            android:layout_gravity="center"/>
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+            android:hint="Введите пароль..."
+            android:background="@drawable/rounded_edittext"/>
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Вход"
-            android:layout_marginTop="80dp"
-            android:layout_gravity="center" />
+            android:text="Регистрация"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"/>
 
         <Button
             android:id="@+id/button5"
-            android:layout_width="wrap_content"
+            android:layout_width="260dp"
             android:layout_height="wrap_content"
-            android:text="Button"
-            android:layout_marginTop="200dp"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:layout_marginTop="90dp"
+            android:text="Войти"
+            android:onClick="Login"/>
     </FrameLayout>
 
 

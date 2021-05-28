@@ -15,13 +15,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         isLogin = false;
         super.onCreate(savedInstanceState);
-        try{
-            setContentView(R.layout.activity_main);
-        }catch (Exception e){
-            Log.d(e.getMessage(),"ok");
-        }
-
-
+        setContentView(R.layout.activity_main);
         Window w = getWindow();
         w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
@@ -38,7 +32,8 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
         else {
-
+            Intent intent=new Intent(MainActivity.this, LoginActivity.class);
+            startActivity(intent);
         }
     }
 
