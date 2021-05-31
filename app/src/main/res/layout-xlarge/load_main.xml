@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LeveloneActivity"
-    android:background="@color/white">
+    tools:context=".LoadActivity"
+    >
 
 
     <LinearLayout
@@ -13,12 +13,19 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-
-        <LinearLayout
-            android:id="@+id/container1"
+        <ImageButton
+            android:id="@+id/imageButton"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical"/>
+            android:layout_height="80dp"
+            android:background="@color/purple_500"
+            android:tint="@color/white"
+            android:onClick="Back"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/abc_vector_test" />
+
+        <ListView
+            android:id="@+id/LoadSaveList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </LinearLayout>
 </RelativeLayout>

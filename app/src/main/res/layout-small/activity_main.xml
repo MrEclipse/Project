@@ -25,37 +25,34 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
             android:text="Новая игра"
-            android:onClick="NewGame"
-            android:background="@color/purple_500"/>
+            android:onClick="NewGame" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="8dp"
             android:text="Загрузить сохранение"
-            android:onClick="Load"
-            android:background="@color/purple_500"/>
+            android:onClick="Load" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
-            android:text="Таблица рекордов"
-            android:background="@color/purple_500"/>
+            android:layout_marginTop="8dp"
+            android:text="Таблица рекордов" />
 
         <Button
             android:id="@+id/button4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
-            android:text="Настройки"
-            android:background="@color/purple_500"/>
+            android:layout_marginTop="8dp"
+            android:text="Настройки" />
 
 
     </LinearLayout>

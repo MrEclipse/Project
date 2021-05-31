@@ -22,6 +22,10 @@ public class NewgameActivity extends AppCompatActivity {
         Intent intent=new Intent(NewgameActivity.this, MainActivity.class);
         startActivity(intent);
     }
+    public void LevelFirst(View view){
+        Intent intent=new Intent(NewgameActivity.this, LeveloneActivity.class);
+        startActivity(intent);
+    }
     @Override
     public void startActivity(Intent intent) {
         super.startActivity(intent);

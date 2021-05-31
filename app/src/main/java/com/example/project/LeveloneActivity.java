@@ -31,5 +31,9 @@ public class LeveloneActivity extends AppCompatActivity {
         Intent intent=new Intent(LeveloneActivity.this, NewgameActivity.class);
         startActivity(intent);
     }
+    public void Agree(View view){
+        Intent intent=new Intent(LeveloneActivity.this, LeveloneParttwoActivity.class);
+        startActivity(intent);
+    }
 
 }

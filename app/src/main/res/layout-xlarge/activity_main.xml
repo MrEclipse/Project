@@ -17,7 +17,7 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="450dp"
+            android:layout_height="700dp"
             android:layout_marginTop="50dp"
             app:srcCompat="@drawable/books" />
 
@@ -31,8 +31,7 @@
             android:textSize="40dp"
             android:paddingLeft="100dp"
             android:paddingRight="100dp"
-            android:onClick="NewGame"
-            android:background="@color/orange"/>
+            android:onClick="NewGame" />
 
         <Button
             android:id="@+id/button2"
@@ -44,8 +43,7 @@
             android:paddingLeft="90dp"
             android:paddingRight="90dp"
             android:text="Загрузить сохранение"
-            android:onClick="Load"
-            android:background="@color/orange"/>
+            android:onClick="Load" />
 
         <Button
             android:id="@+id/button3"
@@ -56,8 +54,7 @@
             android:textSize="40dp"
             android:paddingLeft="100dp"
             android:paddingRight="100dp"
-            android:text="Таблица рекордов"
-            android:background="@color/orange"/>
+            android:text="Таблица рекордов" />
 
         <Button
             android:id="@+id/button4"
@@ -68,8 +65,7 @@
             android:textSize="40dp"
             android:paddingLeft="100dp"
             android:paddingRight="100dp"
-            android:text="Настройки"
-            android:background="@color/orange"/>
+            android:text="Настройки" />
 
 
     </LinearLayout>
