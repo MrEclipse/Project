@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LeveloneActivity"
+    tools:context=".LeveloneParttwoActivity"
     android:background="@color/white">
 
     <LinearLayout
@@ -21,7 +21,7 @@
             android:textSize="25dp"
             android:text="TextView"
             android:gravity="center"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black" />
 
         <TextView
             android:id="@+id/textView17"
@@ -29,8 +29,10 @@
             android:layout_height="wrap_content"
             android:textStyle="italic"
             android:textSize="20dp"
-            android:padding="5dp"
-            android:text="TextView" />
+            android:padding="10dp"
+            android:text="TextView"
+            android:background="@drawable/border"
+            android:onClick="wrong"/>
 
         <TextView
             android:id="@+id/textView16"
@@ -38,8 +40,11 @@
             android:layout_height="wrap_content"
             android:textStyle="italic"
             android:textSize="20dp"
-            android:padding="5dp"
-            android:text="TextView" />
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:text="TextView"
+            android:background="@drawable/border"
+            android:onClick="right"/>
 
         <TextView
             android:id="@+id/textView15"
@@ -47,8 +52,11 @@
             android:layout_height="wrap_content"
             android:textStyle="italic"
             android:textSize="20dp"
-            android:padding="5dp"
-            android:text="TextView" />
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:text="TextView"
+            android:background="@drawable/border"
+            android:onClick="wrong"/>
 
         <TextView
             android:id="@+id/textView14"
@@ -56,8 +64,11 @@
             android:layout_height="wrap_content"
             android:textStyle="italic"
             android:textSize="20dp"
-            android:padding="5dp"
-            android:text="TextView" />
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:text="TextView"
+            android:background="@drawable/border"
+            android:onClick="wrong"/>
 
     </LinearLayout>
 </RelativeLayout>
