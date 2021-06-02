@@ -34,6 +34,7 @@ public class LeveloneParttwoActivity extends AppCompatActivity {
     Dialog win;
 
     TextView txt;
+    TextView txth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +55,7 @@ public class LeveloneParttwoActivity extends AppCompatActivity {
 
         b2 = win.findViewById(R.id.button);
         txt = win.findViewById(R.id.result);
+        txth = win.findViewById(R.id.textView11);
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -93,22 +95,36 @@ public class LeveloneParttwoActivity extends AppCompatActivity {
 
     public void click(View view) {
         Button b = (Button) view;
-        if (lvl >= 10) {
+        if (lvl >= 12) {
             win.show();
-            txt.setText("Ваш результат - " + reputation +"/10 правильных.");
+            if(reputation<=4) {
+                txth.setText("Глаза раззуй!");
+                txt.setText("Ваш результат - " + reputation + "/12 правильных.");
+            } else if(reputation>4 && reputation<8){
+                txth.setText("Можно было бы и по-внимательнее!");
+                txt.setText("Ваш результат - " + reputation + "/12 правильных.");
+            } else if(reputation>8 && reputation<10){
+                txth.setText("Неплохо, салага.");
+                txt.setText("Ваш результат - " + reputation + "/12 правильных.");
+            } else if(reputation>10 && reputation<12){
+                txth.setText("Хорошо!");
+                txt.setText("Ваш результат - " + reputation + "/12 правильных.");
+            } else if(reputation==12){
+                txth.setText("Шарим за ликёр, месье буржуй, да?");
+                txt.setText("Ваш результат - " + reputation + "/12 правильных.");
+            }
+
             reputation = 0;
             Spisok.index = 0;
             lvl=0;
         }
         else{
             if (b.getText().toString().equals(Spisok.rightAnswer.get(Spisok.index))){
-                Toast.makeText(this,"ok", Toast.LENGTH_LONG).show();
 
                 reputation++;
 
             }
             else{
-                Toast.makeText(this,"error", Toast.LENGTH_LONG).show();
             }
             Spisok.index++;
             update();

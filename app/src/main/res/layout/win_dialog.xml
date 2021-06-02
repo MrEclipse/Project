@@ -48,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:gravity="center"
-                android:text="Ваш результат - 11/10 правильных."
+                android:text="Ваш результат - 11/12 правильных."
                 android:textSize="30dp"
                 android:textStyle="italic"
                 android:textColor="@color/black"/>

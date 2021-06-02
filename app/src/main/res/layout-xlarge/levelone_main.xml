@@ -15,21 +15,83 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/editTextTextPersonName5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:padding="10dp"
+                android:text="@string/LevelOne1"
+                android:textColor="@color/black"
+                android:textSize="23dp" />
+
+            <TextView
+                android:id="@+id/editTextTextPersonName4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:padding="10dp"
+                android:text="@string/LevelOne2"
+                android:textColor="@color/black"
+                android:textSize="23dp" />
+
             <TextView
                 android:id="@+id/editTextTextPersonName3"
-                android:layout_marginTop="48dp"
+                android:layout_marginTop="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:textSize="23dp"
-                android:text="@string/LevelOne"
+                android:text="@string/LevelOne3"
                 android:textColor="@color/black"
                 android:padding="10dp"
                 android:background="@drawable/border" />
 
+            <TextView
+                android:id="@+id/editTextTextPersonName7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:padding="10dp"
+                android:text="@string/LevelOne4"
+                android:textColor="@color/black"
+                android:textSize="23dp" />
+
+            <TextView
+                android:id="@+id/editTextTextPersonName6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:padding="10dp"
+                android:text="@string/LevelOne5"
+                android:textColor="@color/black"
+                android:textSize="23dp" />
+
+            <TextView
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:padding="10dp"
+                android:text="@string/LevelOne6"
+                android:textColor="@color/black"
+                android:textSize="23dp" />
+
             <Button
                 android:id="@+id/button41"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="25dp"
                 android:textSize="25dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

@@ -1,17 +1,25 @@
 package com.example.project;
 
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class LoginActivity extends AppCompatActivity {
+import java.sql.PreparedStatement;
 
+public class LoginActivity extends AppCompatActivity {
+    SQLiteDatabase db1;
+    EditText name;
+    EditText pass;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_main);
         Window w = getWindow();
@@ -24,8 +32,12 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void Login(View view){
+        name = findViewById(R.id.editTextTextPersonName);
+        pass = findViewById(R.id.editTextTextPassword);
+        db1 = getBaseContext().openOrCreateDatabase("db", MODE_PRIVATE, null);
         Intent intent=new Intent(LoginActivity.this, NewgameActivity.class);
         startActivity(intent);
+
     }
     @Override
     public void startActivity(Intent intent) {
