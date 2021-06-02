@@ -1,74 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LeveloneParttwoActivity"
-    android:background="@color/white">
+    android:background="@drawable/border"
+    android:orientation="vertical">
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/textView18"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_marginTop="450dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textView18"
-            android:layout_margin="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="25dp"
-            android:text="TextView"
-            android:gravity="center"
-            android:textColor="@color/black" />
+    <Button
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/border"
+        android:onClick="click"
+        android:padding="10dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:textStyle="italic" />
 
-        <TextView
-            android:id="@+id/textView17"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textStyle="italic"
-            android:textSize="20dp"
-            android:padding="10dp"
-            android:text="TextView"
-            android:background="@drawable/border"
-            android:onClick="wrong"/>
+    <Button
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/border"
+        android:onClick="click"
+        android:padding="10dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:textStyle="italic" />
 
-        <TextView
-            android:id="@+id/textView16"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textStyle="italic"
-            android:textSize="20dp"
-            android:layout_marginTop="10dp"
-            android:padding="10dp"
-            android:text="TextView"
-            android:background="@drawable/border"
-            android:onClick="right"/>
+    <Button
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/border"
+        android:onClick="click"
+        android:padding="10dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:textStyle="italic" />
 
-        <TextView
-            android:id="@+id/textView15"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textStyle="italic"
-            android:textSize="20dp"
-            android:layout_marginTop="10dp"
-            android:padding="10dp"
-            android:text="TextView"
-            android:background="@drawable/border"
-            android:onClick="wrong"/>
-
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textStyle="italic"
-            android:textSize="20dp"
-            android:layout_marginTop="10dp"
-            android:padding="10dp"
-            android:text="TextView"
-            android:background="@drawable/border"
-            android:onClick="wrong"/>
-
-    </LinearLayout>
-</RelativeLayout>
+    <Button
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/border"
+        android:onClick="click"
+        android:padding="10dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+</LinearLayout>

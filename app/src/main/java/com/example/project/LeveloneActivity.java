@@ -21,6 +21,7 @@ public class LeveloneActivity extends AppCompatActivity {
         Window w = getWindow();
         w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
+
     }
 
     @Override
@@ -35,5 +36,6 @@ public class LeveloneActivity extends AppCompatActivity {
         Intent intent=new Intent(LeveloneActivity.this, LeveloneParttwoActivity.class);
         startActivity(intent);
     }
+
 
 }
