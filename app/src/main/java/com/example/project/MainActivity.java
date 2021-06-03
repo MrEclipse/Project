@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     public static boolean isLogin;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         isLogin = false;
@@ -32,38 +33,24 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void NewGame(View view) {
-        if (MainActivity.isLogin==true){
-            Intent intent=new Intent(MainActivity.this, NewgameActivity.class);
+        if (MainActivity.isLogin == true) {
+            Intent intent = new Intent(MainActivity.this, NewgameActivity.class);
             startActivity(intent);
             finish();
-        }
-        else {
-            Intent intent=new Intent(MainActivity.this, LoginActivity.class);
+        } else {
+            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
             startActivity(intent);
             finish();
         }
     }
-
-    public static void createDialog(Activity activity) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(activity);
-        builder.setTitle("Диалог")
-                .setMessage("Текст в диалоге")
-                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        Toast.makeText(activity,"Нажата кнопка 'OK' " + LeveloneParttwoActivity.reputation,Toast.LENGTH_SHORT).show();
-                    }
-                })
-                .setNegativeButton("Отмена", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        Toast.makeText(activity,"Нажата кнопка 'Отмена'",Toast.LENGTH_SHORT).show();
-                    }
-                });
-        builder.create().show();
-    }
-
 
 
     public void Load(View view) {
-    Intent intent=new Intent(MainActivity.this, LoadActivity.class);
+        Intent intent = new Intent(MainActivity.this, LoadActivity.class);
+    }
+
+
+    public void Sorry(View view) {
+        Toast.makeText(getApplicationContext(), "В разработке!", Toast.LENGTH_SHORT).show();
     }
 }

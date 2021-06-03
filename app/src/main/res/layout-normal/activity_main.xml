@@ -17,7 +17,7 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="78dp"
             android:layout_marginTop="50dp"
             app:srcCompat="@drawable/books" />
 
@@ -37,7 +37,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
             android:text="Загрузить сохранение"
-            android:onClick="Load" />
+            android:onClick="Sorry"/>
 
         <Button
             android:id="@+id/button3"
@@ -45,7 +45,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
-            android:text="Таблица рекордов" />
+            android:text="Таблица рекордов"
+            android:onClick="Sorry"/>
 
         <Button
             android:id="@+id/button4"
@@ -53,7 +54,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
-            android:text="Настройки" />
+            android:text="Настройки"
+            android:onClick="Sorry"/>
 
 
     </LinearLayout>
